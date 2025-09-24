@@ -1,0 +1,21 @@
+# Inicializa a soma com 0
+soma = 0
+
+print("Digite os números inteiros que deseja somar.")
+print("Digite 0 para sair.")
+
+while True:
+    try:
+        # Pede ao usuário para digitar um número
+        numero = int(input("Digite um número: "))
+        
+        # Verifica se o número é 0 para sair do loop
+        if numero == 0:
+            break
+        
+        # Adiciona o número à soma
+        soma += numero
+    except ValueError:print("Entrada inválida. Por favor, digite um número inteiro.")
+
+# Exibe o resultado final
+print(f"A soma total dos números é: {soma}")
